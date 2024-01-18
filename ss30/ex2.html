@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function print(n) {
+            sum = 0;
+            let check = 0;
+            for (let i = 1; i < n; i++) {
+                if (i % 2 !== 0) {
+                    sum += i;
+                    check = i;
+                }
+            }
+            if (sum % 2 === 0) {
+                check = check - 1;
+            }
+            for (i = 1; i <= check; i += 2) {
+                alert(i, " ");
+            }
+        }
+        let n = +prompt("mời nhập: ");
+        print(n);
+    </script>
+</body>
+
+</html>
